@@ -16,7 +16,7 @@ class CitaViewModel @Inject constructor(
     private val getRandomCitaUseCase : GetRandomCitaUseCase
 ) : ViewModel() {
 
-    val citaM = MutableLiveData<Cita>()
+    val citaM = MutableLiveData<Cita?>()
     val isLoading = MutableLiveData<Boolean>()
 
     fun onCreate() {
